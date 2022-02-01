@@ -40,7 +40,7 @@ class Integrator
         $rtStore = [];
         $rtApiCallData = [];
 
-        $client = new Client(['base_uri' => $this->baseUri, 'timeout'  => 2.0]);
+        $client = new Client(['base_uri' => $this->baseUri, 'timeout'  => 5.0]);
         $headerData = [
             'client_id' => $this->clientId,
             'client_secret' => $this->clientSecret,
@@ -125,7 +125,7 @@ class Integrator
         $rtStore = [];
         $rtApiCallData = [];
 
-        $client = new Client(['base_uri' => $this->baseUri, 'timeout'  => 2.0]);
+        $client = new Client(['base_uri' => $this->baseUri, 'timeout'  => 5.0]);
         $headerData = [
             'client_id' => $this->clientId,
             'client_secret' => $this->clientSecret,
