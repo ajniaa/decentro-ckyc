@@ -1,0 +1,22 @@
+{
+    "name": "ltajniaa/decentro-ckyc",
+    "description": "A package to use decentro ckyc search and download",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Ajay Chaudhary",
+            "email": "ajay@ajniaa.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "ltajniaa\\DecentroCKYC\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "ramsey/uuid": "^4.2"
+    }
+}
