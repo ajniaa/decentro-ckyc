@@ -66,10 +66,9 @@ class Integrator
         // die();
         $code = 0;
         try {
-            $response = $client->request('POST', 'search', ['headers' => $headerData, 'body' => $bodyData]);
+            $response = $client->request('POST', 'search', ['http_errors' => false, 'headers' => $headerData, 'body' => $bodyData]);
             $code = $response->getStatusCode();
         } catch (\Exception $e) {
-            pr($e);
             $rtStatus = "error";
         }
         //die;
@@ -152,7 +151,7 @@ class Integrator
         // die();
         $code = 0;
         try {
-            $response = $client->request('POST', 'download', ['headers' => $headerData, 'body' => $bodyData]);
+            $response = $client->request('POST', 'download', ['http_errors' => false, 'headers' => $headerData, 'body' => $bodyData]);
             $code = $response->getStatusCode();
         } catch (\Exception $e) {
             pr($e);
